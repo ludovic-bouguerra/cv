@@ -1,0 +1,136 @@
+%% start of file `template.tex'.
+%% Copyright 2006-2013 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[11pt,a4paper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+% moderncv themes
+\moderncvstyle{classic}                             % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{blue}                               % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+%\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+%\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+
+% character encoding
+%\usepackage[utf8]{inputenc}                       % if you are not using xelatex ou lualatex, replace by the encoding you are using
+%\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
+
+% adjust the page margins% XeLaTeX can use any Mac OS X font. See the setromanfont command below.
+% Input to XeLaTeX is full Unicode, so Unicode characters can be typed directly into the source.
+
+% The next lines tell TeXShop to typeset with xelatex, and to open and save the source with Unicode encoding.
+
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+
+
+%\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
+%\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+
+% personal data 
+\name{Ludovic}{Bouguerra}
+%\title{ResumÃ© title}                               % optional, remove / comment the line if not wanted
+\address{13009 Marseille}{France}% optional, remove / comment the line if not wanted; the "postcode city" and "country" arguments can be omitted or provided empty
+\phone[mobile]{+33 6 81 93 15 60}                   % optional, remove / comment the line if not wanted; the optional "type" of the phone can be "mobile" (default), "fixed" or "fax"
+%\phone[fixed]{+2~(345)~678~901}
+%\phone[fax]{+3~(456)~789~012}
+\email{bouguerra.ludovic@gmail.com}                               % optional, remove / comment the line if not wanted
+\homepage{www.ludovicbouguerra.fr}                         % optional, remove / comment the line if not wanted
+%\social[linkedin]{ludovic-bouguerra}                        % optional, remove / comment the line if not wanted
+\social[twitter]{lbouguerra}                             % optional, remove / comment the line if not wanted
+\social[github]{ludovic-bouguerra}                              % optional, remove / comment the line if not wanted
+\extrainfo{}                 % optional, remove / comment the line if not wanted
+%\photo[64pt][0.4pt]{picture}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
+\quote{Architecte Informatique}                                 % optional, remove / comment the line if not wanted
+
+% to show numerical labels in the bibliography (default is to show no labels); only useful if you make citations in your resume
+%\makeatletter
+%\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+%\makeatother
+%\renewcommand*{\bibliographyitemlabel}{[\arabic{enumiv}]}% CONSIDER REPLACING THE ABOVE BY THIS
+
+% bibliography with mutiple entries
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+%\begin{CJK*}{UTF8}{gbsn}                          % to typeset your resume in Chinese using CJK
+%-----       resume       ---------------------------------------------------------
+\makecvtitle
+
+\section{Expériences}
+\cventry{Depuis Septembre 2011}{Co fondateur - Directeur technique}{Kalyzée}{Marseille}{}{Modélisation et développement d'un système d'analyse et de navigation dans les contenus vidéos %
+%Detailed achievements:%
+\begin{itemize}%
+\item Création d'un web service de traitement semi-automatique de vidéo (Transcription, Traduction et Voice Over).
+\item Modélisation de l'infrastructure réseau de Kalyzée :
+  \begin{itemize}%
+  \item Mise en place d'une architecture hautement disponible permettant de traiter simultanément des heures de vidéos
+  \item Mise en place d'une architecture répartie avec une séparation des rôles dans le but de faciliter la maintenance et d'assurer une haute disponibilité
+  \end{itemize}
+\end{itemize}}
+\cventry{Avril 2011-- Aout 2011}{Développeur Informatique}{Aix Marseille Université}{Marseille}{}{Modélisation et développement d'une plateforme vidéo sur internet en utilisant Symfony 1.4}
+\cventry{Juillet 2009--Aout 2009}{Développeur Informatique}{Observatoire Astronomique de Marseille Provence}{Marseille}{}{Développement d'une interface web pour une application scientifique
+\begin{itemize}%
+\item Modélisation et réalisation d'une application web permettant de lancer et paramétrer une application scientifique.
+\end{itemize}}
+
+\section{Compétences}
+\cvdoubleitem{Modélisations}{UML}{BPM}{BPML}
+\cvdoubleitem{Java}{Java, EJB 3 JPA, Glassfish 3}{PHP}{PHP 5, Symfony 2, Symfony 1.4, Doctrine}
+\cvdoubleitem{Message Broker}{ActiveMQ, Ice}{Virtualization}{Proxmox VE 2.0}
+\cvdoubleitem{EIP}{Apache Service Mix}{Search Engine}{Apache Lucene, Apache Sorl}
+\cvdoubleitem{Video}{FFmpeg, Wowza Media Server, Html5 video, Video Transcription}{Systèmes d'information}{OpenERP, LDAP Google Apps}
+\cvdoubleitem{Javascript}{JQuery UI, NodeJS}{Qualité logicielle}{Jenkins, Travis CI, tests unitaires}
+
+\section{Formations}
+\cventry{2011--2013}{Master  MIAGE}{Aix Marseille Université}{Marseille}{}{ Méthodes Informatiques Appliquées à la Gestion des Entreprises  }  % arguments 3 to 6 can be left empty
+\cventry{2010--2011}{Licence 3 MIAGE}{Aix Marseille Université}{Marseille}{}{Spécialité Mathématiques et Informatique }
+\cventry{2008--2010}{BTS Informatique de gestion option développeur d'applications}{Lycée Marie Curie}{Marseille}{}{}
+\cventry{2008}{Baccalauréat Scientifique}{Lycée Saint Exupéry}{Marseille}{}{Spécialité physique}
+
+\section{Langues}
+\cvitemwithcomment{Français}{langue natale}{}
+\cvitemwithcomment{Anglais}{technique maitrisé}{}
+\cvitemwithcomment{Espagnol}{notions}{}
+
+\section{Centres d'intérêts}
+\cvitem{}{Informatique et nouvelles technologies}
+\cvitem{}{Sport}
+\cvitem{}{Aviation}
+
+%\section{References}
+%\begin{cvcolumns}
+ % \cvcolumn{Category 1}{\begin{itemize}\item Person 1\item Person 2\item Person 3\end{itemize}}
+ % \cvcolumn{Category 2}{Amongst others:\begin{itemize}\item Person 1, and\item Person 2\end{itemize}(more upon request)}
+ % \cvcolumn[0.5]{All the rest \& some more}{\textit{That} person, and \textbf{those} also (all available upon request).}
+%\end{cvcolumns}
+
+% Publications from a BibTeX file without multibib	
+%  for numerical labels: \renewcommand{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}% CONSIDER MERGING WITH PREAMBLE PART
+%  to redefine the heading string ("Publications"): \renewcommand{\refname}{Articles}
+\nocite{*}
+\bibliographystyle{plain}
+\bibliography{publications}                        % 'publications' is the name of a BibTeX file
+
+% Publications from a BibTeX file using the multibib package
+%\section{Publications}
+%\nocitebook{book1,book2}
+%\bibliographystylebook{plain}
+%\bibliographybook{publications}                   % 'publications' is the name of a BibTeX file
+%\nocitemisc{misc1,misc2,misc3}
+%\bibliographystylemisc{plain}
+%\bibliographymisc{publications}                   % 'publications' is the name of a BibTeX file
+
+\clearpage
+
+%\clearpage\end{CJK*}                              % if you are typesetting your resume in Chinese using CJK; the \clearpage is required for fancyhdr to work correctly with CJK, though it kills the page numbering by making \lastpage undefined
+\end{document}
+
+
+%% end of file `template.tex'.
